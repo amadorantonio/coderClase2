@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar/NavBar';
+import Box from '@material-ui/core/Box';
 
 function App() {
-  return (
+  return ( //JSX
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Tienda de bicicletas de Antonio Amador / React / CODERHOUSE
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar/>
+      <Box borderTop={50} color='#ffffff'></Box>
+      <p>
+        Tienda de bicicletas de Antonio Amador / React / CODERHOUSE
+      </p>
     </div>
   );
 }
