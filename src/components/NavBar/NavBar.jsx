@@ -8,6 +8,7 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import logo from '../../assets/img/logo.png'
+import CartWidget from '../CartWidget/CartWidget';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -33,9 +34,10 @@ function NavBar() {
                     <MenuIcon />
                 </IconButton>
                 <Button color="inherit">Login</Button>
-                <Button color="inherit">Tienda</Button>
+                <Button color="inherit">Categorias</Button>
                 <Button color="inherit">Contacto</Button>
-                <Button color="inherit">Conoce Más</Button>
+                <Button color="inherit">Conoce Más</Button> 
+                <CartWidget></CartWidget>
                 <Typography variant="h6" className={classes.title}>
                     Tony Bikes
                 </Typography>
