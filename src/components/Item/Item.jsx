@@ -14,7 +14,7 @@ const Item = (props) => {
             <p>En Sock: {props.stock}</p>
             <p>Cantidad</p>
             <ItemCount stock={props.stock}></ItemCount>
-            <button disabled={props.stock == 0}>Comprar</button>
+            <button disabled={props.stock === 0}>Comprar</button>
         </div>
     )
 }
